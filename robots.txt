@@ -1,5 +1,5 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
-Sitemap: https://devremarket.com/sitemap.xml
-Host: https://devremarket.com
+Sitemap: https://abdurrahmankanbur.github.io/devremarket/sitemap.xml
+Host: https://abdurrahmankanbur.github.io
