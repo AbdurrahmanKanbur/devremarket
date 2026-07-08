@@ -65,8 +65,8 @@ textarea {
   height: 44px;
   place-items: center;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 8px 18px rgba(16, 38, 53, 0.16);
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(16, 38, 53, 0.1);
 }
 
 .logo-symbol img {
@@ -710,4 +710,6 @@ h2 {
     flex-direction: column;
   }
 }
+
+
 
