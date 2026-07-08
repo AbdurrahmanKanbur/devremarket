@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Devre Market | Komponentten Projeye</title>
+    <meta
+      name="description"
+      content="Devre Market; elektronik komponent, modül, eğitim kiti ve proje içeriklerini bir araya getiren elektronik platformudur."
+    >
+    <meta name="robots" content="index, follow">
+    <meta property="og:site_name" content="Devre Market">
+    <meta property="og:title" content="Devre Market | Komponentten Projeye">
+    <meta property="og:description" content="Devre Market; elektronik komponent, modül, eğitim kiti ve proje içeriklerini bir araya getiren elektronik platformudur.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Devre Market | Komponentten Projeye">
+    <meta name="twitter:description" content="Devre Market; elektronik komponent, modül, eğitim kiti ve proje içeriklerini bir araya getiren elektronik platformudur.">
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="canonical" href="https://devremarket.com/">
+    <meta property="og:url" content="https://devremarket.com/">
+    <link rel="stylesheet" href="src/styles/main.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="logo" href="#anasayfa" aria-label="Devre Market ana sayfa">
+        <span class="logo-symbol">DM</span>
+        <span>
+          <strong>Devre Market</strong>
+          <small>Komponentten Projeye</small>
+        </span>
+      </a>
+
+      <nav class="menu" aria-label="Ana menu">
+        <a href="#magaza">Mağaza</a>
+        <a href="#egitim">Eğitim</a>
+        <a href="#projeler">Projeler</a>
+        <a href="#kitler">Kitler</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+
+      <button class="cart" type="button" aria-label="Sepet">
+        <span>Sepet</span>
+        <strong data-cart-count>0</strong>
+      </button>
+    </header>
+
+    <main id="anasayfa">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="label">Elektronik malzeme + uygulamalı eğitim</p>
+          <h1>Devre Market</h1>
+          <p class="hero-text">
+            Komponentler, modüller, sensörler, mikrodenetleyici kartları ve proje tabanlı
+            eğitim içerikleri tek yerde. Öğren, tasarla, üret.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#magaza">Ürünleri İncele</a>
+            <a class="button ghost" href="#projeler">Proje Paketleri</a>
+          </div>
+        </div>
+
+        <div class="hero-board" aria-hidden="true">
+          <div class="chip"></div>
+          <span class="pin pin-1"></span>
+          <span class="pin pin-2"></span>
+          <span class="pin pin-3"></span>
+          <span class="trace trace-1"></span>
+          <span class="trace trace-2"></span>
+          <span class="trace trace-3"></span>
+          <span class="badge badge-1">ESP32</span>
+          <span class="badge badge-2">Sensör</span>
+          <span class="badge badge-3">Kit</span>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Platform ozeti">
+        <article>
+          <strong>120+</strong>
+          <span>Başlangıç ürünü</span>
+        </article>
+        <article>
+          <strong>24</strong>
+          <span>Proje içeriği</span>
+        </article>
+        <article>
+          <strong>6</strong>
+          <span>Eğitim rotası</span>
+        </article>
+      </section>
+
+      <section class="section" id="magaza">
+        <div class="section-title">
+          <p class="label">Mağaza</p>
+          <h2>Öne Çıkan Ürünler</h2>
+          <p>Elektronik geliştirme için sık kullanılan kart, sensör, güç modülü ve eğitim setleri.</p>
+        </div>
+
+        <div class="filters" aria-label="Urun kategorileri">
+          <button class="filter is-active" type="button" data-filter="all">Tümü</button>
+          <button class="filter" type="button" data-filter="kart">Kartlar</button>
+          <button class="filter" type="button" data-filter="sensor">Sensörler</button>
+          <button class="filter" type="button" data-filter="kit">Kitler</button>
+          <button class="filter" type="button" data-filter="guc">Güç</button>
+        </div>
+
+        <div class="product-grid">
+          <article class="product" data-category="kart">
+            <div class="product-image image-board"></div>
+            <span>Mikrodenetleyici</span>
+            <h3>ESP32 Geliştirme Kartı</h3>
+            <p>Wi-Fi ve Bluetooth destekli IoT projeleri için pratik başlangıç kartı.</p>
+            <footer>
+              <strong>249 TL</strong>
+              <button class="add-to-cart" type="button">Sepete Ekle</button>
+            </footer>
+          </article>
+
+          <article class="product" data-category="sensor">
+            <div class="product-image image-sensor"></div>
+            <span>Sensör</span>
+            <h3>Ultrasonik Mesafe Sensörü</h3>
+            <p>Robotik, otomasyon ve ölçüm uygulamalarında hızlı prototipleme.</p>
+            <footer>
+              <strong>65 TL</strong>
+              <button class="add-to-cart" type="button">Sepete Ekle</button>
+            </footer>
+          </article>
+
+          <article class="product" data-category="kit">
+            <div class="product-image image-kit"></div>
+            <span>Eğitim kiti</span>
+            <h3>Temel Elektronik Seti</h3>
+            <p>Direnç, LED, buton, breadboard ve jumper kablo ile temel uygulamalar.</p>
+            <footer>
+              <strong>389 TL</strong>
+              <button class="add-to-cart" type="button">Sepete Ekle</button>
+            </footer>
+          </article>
+
+          <article class="product" data-category="guc">
+            <div class="product-image image-power"></div>
+            <span>Güç modülü</span>
+            <h3>Ayarlanabilir DC-DC Modül</h3>
+            <p>Laboratuvar, prototip ve saha testleri için kompakt güç çözümü.</p>
+            <footer>
+              <strong>119 TL</strong>
+              <button class="add-to-cart" type="button">Sepete Ekle</button>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+      <section class="learning" id="egitim">
+        <div class="section-title">
+          <p class="label">Eğitim</p>
+          <h2>Projeyle Öğren</h2>
+          <p>Her eğitim; malzeme listesi, bağlantı şeması, kod ve test adımlarıyla ilerler.</p>
+        </div>
+
+        <div class="lesson-list">
+          <article>
+            <strong>01</strong>
+            <div>
+              <h3>Temel Elektronik</h3>
+              <p>Direnç, kondansatör, diyot, transistor, ölçü aleti ve breadboard kullanımı.</p>
+            </div>
+          </article>
+          <article>
+            <strong>02</strong>
+            <div>
+              <h3>Arduino, ESP32, STM32</h3>
+              <p>GPIO, PWM, ADC, haberleşme protokolleri ve sensör uygulamaları.</p>
+            </div>
+          </article>
+          <article>
+            <strong>03</strong>
+            <div>
+              <h3>PCB ve Prototipleme</h3>
+              <p>Şema çizimi, kart tasarımı, lehimleme, hata ayıklama ve test kontrol listeleri.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projeler">
+        <div class="section-title">
+          <p class="label">Projeler</p>
+          <h2>Hazır Proje Paketleri</h2>
+          <p>Projeler eğitim içeriği ve gerekli ürünlerle birlikte teklif akışına bağlanır.</p>
+        </div>
+
+        <div class="project-grid">
+          <article>
+            <span>Başlangıç</span>
+            <h3>Akıllı Sıcaklık Takibi</h3>
+            <p>ESP32, sıcaklık sensörü ve web paneli ile uzaktan izleme projesi.</p>
+            <a href="#iletisim">Teklif Al</a>
+          </article>
+          <article>
+            <span>Robotik</span>
+            <h3>Çizgi İzleyen Robot</h3>
+            <p>Motor sürücü, IR sensör ve kontrol algoritmasıyla tam uygulama.</p>
+            <a href="#iletisim">Teklif Al</a>
+          </article>
+          <article>
+            <span>Güç</span>
+            <h3>Mini Laboratuvar Kaynağı</h3>
+            <p>Ayarlanabilir güç modülü, ekran ve kutulama önerileriyle set.</p>
+            <a href="#iletisim">Teklif Al</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="kits" id="kitler">
+        <div>
+          <p class="label">Başlangıç kitleri</p>
+          <h2>Yeni başlayanlar için hazır sepetler</h2>
+          <p>
+            Müşterinin tek tek parça aramasını azaltmak için başlangıç, robotik, IoT ve güç
+            elektroniği kitleri ayrı ürün grubu olarak sunulabilir.
+          </p>
+        </div>
+        <ul>
+          <li>Temel Elektronik Başlangıç Seti</li>
+          <li>Arduino Sensör Deney Seti</li>
+          <li>ESP32 IoT Uygulama Seti</li>
+          <li>Motor ve Sürücü Deney Seti</li>
+        </ul>
+      </section>
+
+      <section class="contact" id="iletisim">
+        <div>
+          <p class="label">İletişim</p>
+          <h2>İlk siparişleri teklif formuyla başlat.</h2>
+          <p>
+            Ödeme sistemi eklenene kadar bu form WhatsApp veya e-posta teklif akışına
+            bağlanabilir.
+          </p>
+        </div>
+
+        <form>
+          <label>
+            Ad Soyad
+            <input type="text" name="name" placeholder="Adınız">
+          </label>
+          <label>
+            E-posta
+            <input type="email" name="email" placeholder="ornek@mail.com">
+          </label>
+          <label>
+            Mesaj
+            <textarea name="message" rows="4" placeholder="Aradığınız ürün veya proje seti"></textarea>
+          </label>
+          <button type="button">Teklif İste</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <strong>Devre Market</strong>
+      <span>Komponentten Projeye</span>
+    </footer>
+
+    <script src="src/scripts/main.js"></script>
+  </body>
+</html>
