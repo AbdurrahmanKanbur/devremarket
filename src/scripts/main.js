@@ -1,19 +1,28 @@
-const cartCount = document.querySelector("[data-cart-count]");
-const addToCartButtons = document.querySelectorAll(".add-to-cart");
+const offerButtons = document.querySelectorAll(".add-to-cart");
 const filterButtons = document.querySelectorAll(".filter");
 const products = document.querySelectorAll(".product");
+const messageField = document.querySelector('textarea[name="message"]');
+const prepareMessageButton = document.querySelector("[data-prepare-message]");
 
-let cartQuantity = 0;
+const scrollToContact = () => {
+  document.querySelector("#iletisim")?.scrollIntoView({ behavior: "smooth", block: "start" });
+};
 
-addToCartButtons.forEach((button) => {
+offerButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    cartQuantity += 1;
-    cartCount.textContent = cartQuantity;
-    button.textContent = "Eklendi";
+    const product = button.closest(".product");
+    const productName = product?.querySelector("h3")?.textContent?.trim();
+
+    if (messageField && productName) {
+      messageField.value = `${productName} hakkında teklif almak istiyorum. Adet ve proje ihtiyacımı paylaşmak istiyorum.`;
+    }
+
+    button.textContent = "Not Hazır";
+    scrollToContact();
 
     window.setTimeout(() => {
-      button.textContent = "Sepete Ekle";
-    }, 900);
+      button.textContent = "Teklif İste";
+    }, 1200);
   });
 });
 
@@ -29,4 +38,14 @@ filterButtons.forEach((button) => {
       product.classList.toggle("is-hidden", !isVisible);
     });
   });
+});
+
+prepareMessageButton?.addEventListener("click", () => {
+  if (!messageField) return;
+
+  if (!messageField.value.trim()) {
+    messageField.value = "Merhaba, Devre Market üzerinden ürün/proje paketi için teklif almak istiyorum.";
+  }
+
+  messageField.focus();
 });

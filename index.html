@@ -39,10 +39,7 @@
         <a href="#iletisim">İletişim</a>
       </nav>
 
-      <button class="cart" type="button" aria-label="Sepet">
-        <span>Sepet</span>
-        <strong data-cart-count>0</strong>
-      </button>
+      <a class="top-cta" href="#iletisim">Teklif Al</a>
     </header>
 
     <main id="anasayfa">
@@ -51,12 +48,11 @@
           <p class="label">Elektronik malzeme + uygulamalı eğitim</p>
           <h1>Devre Market</h1>
           <p class="hero-text">
-            Komponentler, modüller, sensörler, mikrodenetleyici kartları ve proje tabanlı
-            eğitim içerikleri tek yerde. Öğren, tasarla, üret.
+            Komponentler, modüller, sensörler, mikrodenetleyici kartları ve proje tabanlı eğitim içerikleri tek yerde. Ürünü seç, ihtiyacını yaz, teklif akışını başlat.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#magaza">Ürünleri İncele</a>
-            <a class="button ghost" href="#projeler">Proje Paketleri</a>
+            <a class="button ghost" href="#iletisim">Teklif İste</a>
           </div>
         </div>
 
@@ -89,6 +85,23 @@
         </article>
       </section>
 
+      <section class="process" aria-label="Teklif akışı">
+        <article>
+          <strong>1</strong>
+          <h3>Ürünü veya kiti seç</h3>
+          <p>Kart, sensör, güç modülü ya da hazır proje paketini belirle.</p>
+        </article>
+        <article>
+          <strong>2</strong>
+          <h3>İhtiyacını gönder</h3>
+          <p>Adet, proje amacı ve teslim beklentisini kısa not olarak ilet.</p>
+        </article>
+        <article>
+          <strong>3</strong>
+          <h3>Teklif akışı başlasın</h3>
+          <p>Stok, alternatif ürün ve eğitim içeriği birlikte değerlendirilsin.</p>
+        </article>
+      </section>
       <section class="section" id="magaza">
         <div class="section-title">
           <p class="label">Mağaza</p>
@@ -112,7 +125,7 @@
             <p>Wi-Fi ve Bluetooth destekli IoT projeleri için pratik başlangıç kartı.</p>
             <footer>
               <strong>249 TL</strong>
-              <button class="add-to-cart" type="button">Sepete Ekle</button>
+              <button class="add-to-cart" type="button">Teklif İste</button>
             </footer>
           </article>
 
@@ -123,7 +136,7 @@
             <p>Robotik, otomasyon ve ölçüm uygulamalarında hızlı prototipleme.</p>
             <footer>
               <strong>65 TL</strong>
-              <button class="add-to-cart" type="button">Sepete Ekle</button>
+              <button class="add-to-cart" type="button">Teklif İste</button>
             </footer>
           </article>
 
@@ -134,7 +147,7 @@
             <p>Direnç, LED, buton, breadboard ve jumper kablo ile temel uygulamalar.</p>
             <footer>
               <strong>389 TL</strong>
-              <button class="add-to-cart" type="button">Sepete Ekle</button>
+              <button class="add-to-cart" type="button">Teklif İste</button>
             </footer>
           </article>
 
@@ -145,7 +158,7 @@
             <p>Laboratuvar, prototip ve saha testleri için kompakt güç çözümü.</p>
             <footer>
               <strong>119 TL</strong>
-              <button class="add-to-cart" type="button">Sepete Ekle</button>
+              <button class="add-to-cart" type="button">Teklif İste</button>
             </footer>
           </article>
         </div>
@@ -215,7 +228,7 @@
       <section class="kits" id="kitler">
         <div>
           <p class="label">Başlangıç kitleri</p>
-          <h2>Yeni başlayanlar için hazır sepetler</h2>
+          <h2>Yeni başlayanlar için hazır kitler</h2>
           <p>
             Müşterinin tek tek parça aramasını azaltmak için başlangıç, robotik, IoT ve güç
             elektroniği kitleri ayrı ürün grubu olarak sunulabilir.
@@ -232,10 +245,9 @@
       <section class="contact" id="iletisim">
         <div>
           <p class="label">İletişim</p>
-          <h2>İlk siparişleri teklif formuyla başlat.</h2>
+          <h2>İhtiyacını yaz, teklif akışını başlatalım.</h2>
           <p>
-            Ödeme sistemi eklenene kadar bu form WhatsApp veya e-posta teklif akışına
-            bağlanabilir.
+            Seçtiğin ürün, kit veya proje paketini birkaç cümleyle anlat. Telefon/WhatsApp bilgisi eklendiğinde bu alan doğrudan teklif akışına bağlanabilir.
           </p>
         </div>
 
@@ -252,7 +264,7 @@
             Mesaj
             <textarea name="message" rows="4" placeholder="Aradığınız ürün veya proje seti"></textarea>
           </label>
-          <button type="button">Teklif İste</button>
+          <button type="button" data-prepare-message>Teklif Notu Hazırla</button>
         </form>
       </section>
     </main>
@@ -265,6 +277,4 @@
     <script src="src/scripts/main.js"></script>
   </body>
 </html>
-
-
 
