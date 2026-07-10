@@ -375,7 +375,9 @@ h2 {
 }
 .section,
 .learning,
-.kits {
+.kits,
+.about,
+.policy {
   padding-top: 76px;
 }
 
@@ -517,6 +519,73 @@ h2 {
   border-radius: 6px;
 }
 
+
+.image-arduino::before {
+  inset: 28px 34px;
+  background: #0f8aa0;
+  border: 8px solid #0b6574;
+  border-radius: 8px;
+}
+
+.image-arduino::after {
+  left: 44px;
+  bottom: 28px;
+  width: 118px;
+  height: 12px;
+  background: repeating-linear-gradient(90deg, #26323d 0 8px, transparent 8px 14px);
+}
+
+.image-display::before {
+  inset: 28px 36px;
+  background: #1d2832;
+  border: 8px solid #45606f;
+  border-radius: 8px;
+}
+
+.image-display::after {
+  left: 60px;
+  right: 60px;
+  top: 58px;
+  height: 22px;
+  background: #52d3d3;
+  border-radius: 6px;
+}
+
+.image-relay::before {
+  left: 34px;
+  top: 34px;
+  width: 138px;
+  height: 70px;
+  background: #176e48;
+  border-radius: 8px;
+}
+
+.image-relay::after {
+  right: 36px;
+  top: 44px;
+  width: 66px;
+  height: 48px;
+  background: #2366b0;
+  border-radius: 6px;
+}
+
+.image-robot::before {
+  left: 38px;
+  top: 44px;
+  width: 132px;
+  height: 54px;
+  background: #f3b400;
+  border-radius: 10px;
+}
+
+.image-robot::after {
+  left: 56px;
+  right: 56px;
+  bottom: 24px;
+  height: 28px;
+  background: radial-gradient(circle at 14px 14px, #26323d 0 13px, transparent 14px),
+    radial-gradient(circle at calc(100% - 14px) 14px, #26323d 0 13px, transparent 14px);
+}
 .product span,
 .project-grid span {
   color: var(--cyan);
@@ -609,6 +678,66 @@ h2 {
   font-weight: 800;
 }
 
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.guide-grid article,
+.about-list article,
+.policy {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 10px 28px rgba(22, 33, 43, 0.06);
+}
+
+.guide-grid article {
+  padding: 22px;
+}
+
+.guide-grid span {
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.guide-grid p,
+.about p,
+.about-list p,
+.policy p {
+  color: var(--muted);
+}
+
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1fr);
+  gap: 42px;
+  width: min(1160px, calc(100% - 36px));
+  margin-inline: auto;
+}
+
+.about-list {
+  display: grid;
+  gap: 14px;
+}
+
+.about-list article {
+  padding: 18px;
+}
+
+.about-list strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.policy {
+  width: min(1160px, calc(100% - 36px));
+  margin-inline: auto;
+  padding: 28px;
+}
 .contact {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 470px);
@@ -666,7 +795,18 @@ h2 {
 }
 
 .footer strong {
+  display: block;
   color: var(--ink);
+}
+
+.footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer a:hover {
+  color: var(--blue);
 }
 
 @media (max-width: 960px) {
@@ -686,6 +826,7 @@ h2 {
   .hero,
   .learning,
   .kits,
+  .about,
   .contact {
     grid-template-columns: 1fr;
   }
@@ -696,6 +837,10 @@ h2 {
 
   .product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .guide-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -723,7 +868,8 @@ h2 {
   .metrics,
   .process,
   .product-grid,
-  .project-grid {
+  .project-grid,
+  .guide-grid {
     grid-template-columns: 1fr;
   }
 
